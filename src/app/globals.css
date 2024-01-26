@@ -1,33 +1,82 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.weatherContainer {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #bcbcbc;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: fit-content;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.cityName {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.time {
+  font-size: 16px;
+  color: #666;
 }
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.celsius {
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.realFeel {
+  font-size: 16px;
+  color: #666;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailItem {
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 16px;
+  color: #333;
+}
+
+
+/* global.css */
+.weatherIcon {
+  width: 50px; /* Set as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+
+/* Add more styles and adjust as needed for responsiveness and theming */
